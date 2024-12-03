@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Kirana Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vikas Kirana Store</h1>
+            <p>Fresh Groceries Delivered to Your Doorstep</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#order">Order Now</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Your Kirana Store! We provide fresh groceries, spices, and everyday essentials to your home with trust and quality.</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <ul class="products">
+                <li>Zerox</li>
+                <li>Daily Groceries</li>
+                <li>Snacks and Beverages</li>
+                <li>Organic Spices</li>
+            </ul>
+        </div>
+    </section>
+    <section id="order">
+        <div class="container">
+            <h2>Order Now</h2>
+            <p>Fill out the form below to place your order. Pick it up from the shop at your convenience.</p>
+            <form action="order.php" method="POST" class="order-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    
+                <label for="items">Select Items:</label>
+                <select id="items" name="items[]" multiple required>
+                    <option value="Rice">Rice</option>
+                    <option value="Wheat Flour">Wheat Flour</option>
+                    <option value="Cooking Oil">Cooking Oil</option>
+                    <option value="Sugar">Sugar</option>
+                    <option value="Tea">Tea</option>
+                    <option value="Snacks">Snacks</option>
+                    <option value="Spices">Spices</option>
+                    <option value="Vegetables">Vegetables</option>
+                    <option value="Fruits">Fruits</option>
+                </select>
+                <small>Hold Ctrl (Cmd on Mac) to select multiple items</small>
+    
+                <label for="custom-items">Custom Items (Optional):</label>
+                <textarea id="custom-items" name="custom_items" placeholder="List additional items here..." rows="4"></textarea>
+    
+                <label for="pickup-date">Pickup Date & Time:</label>
+                <input type="datetime-local" id="pickup-date" name="pickup_date" required>
+    
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> Nipani Jalgaon</p>
+            <p><strong>Phone:</strong> +91 9420802140</p>
+            <p><strong>Email:</strong> dattatrayaghav40@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Kirana Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
