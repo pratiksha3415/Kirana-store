@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #28a745, #218838);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #1e5631;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    background: #343a40;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #28a745;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+section:nth-child(odd) {
+    background: #f1f1f1;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #28a745;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin: 0 auto 20px;
+    max-width: 600px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Product List */
+.products {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products li {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.products li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.products li:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+#contact strong {
+    color: #28a745;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .products li {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+/* Order Form Styles */
+.order-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    padding: 20px;
+    background: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.order-form input,
+.order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.order-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.order-form select,
+.order-form small {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-form select {
+    height: auto;
+}
+
+
+.order-form button:hover {
+    background: #218838;
+}
+
